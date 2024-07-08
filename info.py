@@ -9,6 +9,7 @@ def is_enabled(value, default):
     elif value.strip().lower() in ["off", "false", "no", "0", "disable", "n"]: return False
     else: return default
 
+PORT = os.environ.get("PORT", "8030")
 
 # PyroClient Setup 
 API_ID = int(environ.get('API_ID', '2092870'))
