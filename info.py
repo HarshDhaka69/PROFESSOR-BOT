@@ -12,7 +12,7 @@ def is_enabled(value, default):
 # PyroClient Setup 
 API_ID = int(environ.get('API_ID', '2092870'))
 API_HASH = environ.get('API_HASH', 'd7f5fb245e4c0b489cba4f7b45bc4173')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6379704532:AAHWD5UT3vJaGCju_c4n13E9N5vbycE-K2Q")
+BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # Bot settings
 WEB_SUPPORT = bool(environ.get("WEBHOOK", True)) # for web support on/off
@@ -31,7 +31,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://piroayush:Ayush1414@pirodb.mqxjari.mongodb.net/?retryWrites=true&w=majority&appName=pirodb")
+DATABASE_URL = environ.get('DATABASE_URL', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "MoviesDB")
 FILE_DB_URL = environ.get("FILE_DB_URL", DATABASE_URL)
 FILE_DB_NAME = environ.get("FILE_DB_NAME", DATABASE_NAME)
